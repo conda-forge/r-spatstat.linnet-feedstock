@@ -28,21 +28,26 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-matrix
-    - r-spatstat.core >=1.65_0
-    - r-spatstat.data >=1.4_2
-    - r-spatstat.geom >=1.65_0
-    - r-spatstat.utils >=1.17_0
+    - r-spatstat.core >=2.3_2
+    - r-spatstat.data >=2.1_0
+    - r-spatstat.geom >=2.3_0
+    - r-spatstat.random >=2.0
+    - r-spatstat.sparse >=2.0
+    - r-spatstat.utils >=2.2_0
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-matrix
-    - r-spatstat.core >=1.65_0
-    - r-spatstat.data >=1.4_2
-    - r-spatstat.geom >=1.65_0
-    - r-spatstat.utils >=1.17_0
+    - r-spatstat.core >=2.3_2
+    - r-spatstat.data >=2.1_0
+    - r-spatstat.geom >=2.3_0
+    - r-spatstat.random >=2.0
+    - r-spatstat.sparse >=2.0
+    - r-spatstat.utils >=2.2_0
 
 test:
   commands:
