@@ -1,4 +1,4 @@
-{% set version = "2.3-2" %}
+{% set version = "3.0-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.linnet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.linnet/spatstat.linnet_{{ version }}.tar.gz
-  sha256: 9c78a4b680debfff0f3ae934575c30d03ded49bc9a7179475384af0ebaf13778
+  sha256: 07b3be1c2f074071b8833df2b33daef0f1191fee88eb3054949a0b583e3360ac
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -32,22 +32,24 @@ requirements:
   host:
     - r-base
     - r-matrix
-    - r-spatstat.core >=2.3_2
-    - r-spatstat.data >=2.1_0
-    - r-spatstat.geom >=2.3_0
-    - r-spatstat.random >=2.0
-    - r-spatstat.sparse >=2.0
-    - r-spatstat.utils >=2.2_0
+    - r-spatstat.data >=3.0
+    - r-spatstat.explore >=3.0
+    - r-spatstat.geom >=3.0
+    - r-spatstat.model >=3.0
+    - r-spatstat.random >=3.0
+    - r-spatstat.sparse >=3.0
+    - r-spatstat.utils >=3.0
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-matrix
-    - r-spatstat.core >=2.3_2
-    - r-spatstat.data >=2.1_0
-    - r-spatstat.geom >=2.3_0
-    - r-spatstat.random >=2.0
-    - r-spatstat.sparse >=2.0
-    - r-spatstat.utils >=2.2_0
+    - r-spatstat.data >=3.0
+    - r-spatstat.explore >=3.0
+    - r-spatstat.geom >=3.0
+    - r-spatstat.model >=3.0
+    - r-spatstat.random >=3.0
+    - r-spatstat.sparse >=3.0
+    - r-spatstat.utils >=3.0
 
 test:
   commands:
