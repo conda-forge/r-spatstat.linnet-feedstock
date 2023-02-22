@@ -1,4 +1,4 @@
-{% set version = "3.0-4" %}
+{% set version = "3.0-6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.linnet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.linnet/spatstat.linnet_{{ version }}.tar.gz
-  sha256: 2058cf8a06f0353977ca68b6d4b93f4480b08566ef19f61bdfb669e2bafa4a9b
+  sha256: 1609d4c3b3bf168b6218827749e0c887c09727dc144403a2cf7778e8c8fb606a
 
 build:
   merge_build_host: true  # [win]
