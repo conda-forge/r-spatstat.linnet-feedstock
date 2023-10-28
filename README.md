@@ -3,6 +3,7 @@ About r-spatstat.linnet-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-spatstat.linnet-feedstock/blob/main/LICENSE.txt)
 
+
 About r-spatstat.linnet
 -----------------------
 
@@ -11,6 +12,7 @@ Home: http://spatstat.org/
 Package license: GPL-2.0-or-later
 
 Summary: This is a subset of the 'spatstat' package, containing its functionality for spatial data on a linear network.
+
 About r-spatstat.linnet
 -----------------------
 
