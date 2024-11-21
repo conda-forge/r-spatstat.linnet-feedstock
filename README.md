@@ -13,6 +13,8 @@ Package license: GPL-2.0-or-later
 
 Summary: This is a subset of the 'spatstat' package, containing its functionality for spatial data on a linear network.
 
+Development: https://github.com/spatstat/spatstat.linnet
+
 About r-spatstat.linnet
 -----------------------
 
@@ -21,6 +23,8 @@ Home: http://spatstat.org/
 Package license: GPL-2.0-or-later
 
 Summary: This is a subset of the 'spatstat' package, containing its functionality for spatial data on a linear network.
+
+Development: https://github.com/spatstat/spatstat.linnet
 
 Current build status
 ====================
