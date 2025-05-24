@@ -33,35 +33,36 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
-    - r-spatstat.data >=3.1_4      # [build_platform != target_platform]
-    - r-spatstat.explore >=3.3_3   # [build_platform != target_platform]
-    - r-spatstat.geom >=3.3_4      # [build_platform != target_platform]
-    - r-spatstat.model >=3.3_2     # [build_platform != target_platform]
-    - r-spatstat.random >=3.3_2    # [build_platform != target_platform]
-    - r-spatstat.sparse >=3.1_0    # [build_platform != target_platform]
-    - r-spatstat.univar >=3.1_1    # [build_platform != target_platform]
-    - r-spatstat.utils >=3.1_1     # [build_platform != target_platform]
+    - r-spatstat.data              # [build_platform != target_platform]
+    - r-spatstat.explore           # [build_platform != target_platform]
+    - r-spatstat.geom              # [build_platform != target_platform]
+    - r-spatstat.model             # [build_platform != target_platform]
+    - r-spatstat.random            # [build_platform != target_platform]
+    - r-spatstat.sparse            # [build_platform != target_platform]
+    - r-spatstat.univar            # [build_platform != target_platform]
+    - r-spatstat.utils            # [build_platform != target_platform]
   host:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_4
-    - r-spatstat.explore >=3.3_3
-    - r-spatstat.geom >=3.3_4
-    - r-spatstat.model >=3.3_2
-    - r-spatstat.random >=3.3_2
+    - r-spatstat.explore >=3.4_3
+    - r-spatstat.geom >=3.4_1
+    - r-spatstat.model >=3.3_5
+    - r-spatstat.random >=3.4_1
     - r-spatstat.sparse >=3.1_0
-    - r-spatstat.univar >=3.1_1
-    - r-spatstat.utils >=3.1_1
+    - r-spatstat.univar >=3.1_3
+    - r-spatstat.utils >=3.1_4
   run:
     - r-base
     - r-matrix
-    - r-spatstat.data >=3.0
-    - r-spatstat.explore >=3.0
-    - r-spatstat.geom >=3.0
-    - r-spatstat.model >=3.0
-    - r-spatstat.random >=3.0
-    - r-spatstat.sparse >=3.0
-    - r-spatstat.utils >=3.0
+    - r-spatstat.data >=3.1_4
+    - r-spatstat.explore >=3.4_3
+    - r-spatstat.geom >=3.4_1
+    - r-spatstat.model >=3.3_5
+    - r-spatstat.random >=3.4_1
+    - r-spatstat.sparse >=3.1_0
+    - r-spatstat.univar >=3.1_3
+    - r-spatstat.utils >=3.1_4
 
 test:
   commands:
