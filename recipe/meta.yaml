@@ -1,4 +1,4 @@
-{% set version = "3.3-2" %}
+{% set version = "3.4-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.linnet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.linnet/spatstat.linnet_{{ version }}.tar.gz
-  sha256: de7b9489699c69086b6d6100b5c044efb179e793ae1ca606b58311c7c968c655
+  sha256: 9d72a0c88c1dfe7cd14e4cf42bd952ca6e85fe0764b7417ec0ade85fa6ae43a3
 
 build:
   number: 0
