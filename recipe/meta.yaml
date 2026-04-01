@@ -1,15 +1,15 @@
-{% set version = "3.4-1" %}
+{% set version = "3.5-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-spatstat.linnet
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.linnet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.linnet/spatstat.linnet_{{ version }}.tar.gz
-  sha256: fc51ad6a0b0fbf95629401c0b762d3168fadf4c985b51b6a175cbf53c219b0d7
+  sha256: 1f9ffe5ab69f0a2e81338b73a570c320fdce040406a6e388f44fd6e4fe192799
 
 build:
   number: 0
@@ -45,24 +45,24 @@ requirements:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.7
-    - r-spatstat.geom >=3.7
-    - r-spatstat.model >=3.6_1
-    - r-spatstat.random >=3.4_4
+    - r-spatstat.explore >=3.8
+    - r-spatstat.geom >=3.7_3
+    - r-spatstat.model >=3.7
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_6
-    - r-spatstat.utils >=3.2_1
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
   run:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.7
-    - r-spatstat.geom >=3.7
-    - r-spatstat.model >=3.6_1
-    - r-spatstat.random >=3.4_4
+    - r-spatstat.explore >=3.8
+    - r-spatstat.geom >=3.7_3
+    - r-spatstat.model >=3.7
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_6
-    - r-spatstat.utils >=3.2_1
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
 
 test:
   commands:
