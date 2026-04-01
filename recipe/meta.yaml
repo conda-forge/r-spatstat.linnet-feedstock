@@ -45,24 +45,24 @@ requirements:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.7
-    - r-spatstat.geom >=3.7
-    - r-spatstat.model >=3.6_1
-    - r-spatstat.random >=3.4_4
+    - r-spatstat.explore >=3.8
+    - r-spatstat.geom >=3.7_3
+    - r-spatstat.model >=3.7
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_6
-    - r-spatstat.utils >=3.2_1
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
   run:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.7
-    - r-spatstat.geom >=3.7
-    - r-spatstat.model >=3.6_1
-    - r-spatstat.random >=3.4_4
+    - r-spatstat.explore >=3.8
+    - r-spatstat.geom >=3.7_3
+    - r-spatstat.model >=3.7
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_6
-    - r-spatstat.utils >=3.2_1
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
 
 test:
   commands:
