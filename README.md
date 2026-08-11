@@ -11,7 +11,7 @@ Home: http://spatstat.org/
 
 Package license: GPL-2.0-or-later
 
-Summary: This is a subset of the 'spatstat' package, containing its functionality for spatial data on a linear network.
+Summary: Defines types of spatial data on a linear network and provides functionality for geometrical operations, data analysis and modelling of data on a linear network, in the 'spatstat' family of packages. Contains definitions and support for linear networks, including creation of networks, geometrical measurements, topological connectivity, geometrical operations such as inserting and deleting vertices, intersecting a network with another object, and interactive editing of networks. Data types defined on a network include point patterns, pixel images, functions, and tessellations. Exploratory methods include kernel estimation of intensity on a network, K-functions and pair correlation functions on a network, simulation envelopes, nearest neighbour distance and empty space distance, relative risk estimation with cross-validated bandwidth selection. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported. Parametric models can be fitted to point pattern data using the function lppm() similar to glm(). Only Poisson models are implemented so far. Models may involve dependence on covariates and dependence on marks. Models are fitted by maximum likelihood. Fitted point process models can be simulated, automatically. Formal hypothesis tests of a fitted model are supported (likelihood ratio test, analysis of deviance, Monte Carlo tests) along with basic tools for model selection (stepwise(), AIC()) and variable selection (sdr). Tools for validating the fitted model include simulation envelopes, residuals, residual plots and Q-Q plots, leverage and influence diagnostics, partial residuals, and added variable plots. Random point patterns on a network can be generated using a variety of models.
 
 Development: https://github.com/spatstat/spatstat.linnet
 
@@ -22,7 +22,7 @@ Home: http://spatstat.org/
 
 Package license: GPL-2.0-or-later
 
-Summary: This is a subset of the 'spatstat' package, containing its functionality for spatial data on a linear network.
+Summary: Defines types of spatial data on a linear network and provides functionality for geometrical operations, data analysis and modelling of data on a linear network, in the 'spatstat' family of packages. Contains definitions and support for linear networks, including creation of networks, geometrical measurements, topological connectivity, geometrical operations such as inserting and deleting vertices, intersecting a network with another object, and interactive editing of networks. Data types defined on a network include point patterns, pixel images, functions, and tessellations. Exploratory methods include kernel estimation of intensity on a network, K-functions and pair correlation functions on a network, simulation envelopes, nearest neighbour distance and empty space distance, relative risk estimation with cross-validated bandwidth selection. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported. Parametric models can be fitted to point pattern data using the function lppm() similar to glm(). Only Poisson models are implemented so far. Models may involve dependence on covariates and dependence on marks. Models are fitted by maximum likelihood. Fitted point process models can be simulated, automatically. Formal hypothesis tests of a fitted model are supported (likelihood ratio test, analysis of deviance, Monte Carlo tests) along with basic tools for model selection (stepwise(), AIC()) and variable selection (sdr). Tools for validating the fitted model include simulation envelopes, residuals, residual plots and Q-Q plots, leverage and influence diagnostics, partial residuals, and added variable plots. Random point patterns on a network can be generated using a variety of models.
 
 Development: https://github.com/spatstat/spatstat.linnet
 
@@ -30,7 +30,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/r-spatstat.linnet-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-spatstat.linnet-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -44,20 +51,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_aarch64_r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
@@ -99,34 +92,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.5" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>osx_arm64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12212&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-spatstat.linnet-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.5" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -152,31 +117,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `r-spatstat.linnet` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install r-spatstat.linnet
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install r-spatstat.linnet
 ```
 
-It is possible to list all of the versions of `r-spatstat.linnet` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add r-spatstat.linnet
+# for installing globally
+pixi global install r-spatstat.linnet
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `r-spatstat.linnet` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search r-spatstat.linnet --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search r-spatstat.linnet --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search r-spatstat.linnet --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -188,6 +195,8 @@ mamba repoquery whoneeds r-spatstat.linnet --channel conda-forge
 # List dependencies of `r-spatstat.linnet`:
 mamba repoquery depends r-spatstat.linnet --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
