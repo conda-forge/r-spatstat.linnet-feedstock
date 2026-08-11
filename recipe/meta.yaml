@@ -3,7 +3,7 @@
 
 package:
   name: r-spatstat.linnet
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -33,6 +33,7 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-matrix                     # [build_platform != target_platform]
     - r-spatstat.data              # [build_platform != target_platform]
     - r-spatstat.explore           # [build_platform != target_platform]
     - r-spatstat.geom              # [build_platform != target_platform]
@@ -45,24 +46,24 @@ requirements:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.8
-    - r-spatstat.geom >=3.7_3
-    - r-spatstat.model >=3.7
-    - r-spatstat.random >=3.4_5
-    - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_7
-    - r-spatstat.utils >=3.2_2
+    - r-spatstat.explore >=3.8_2
+    - r-spatstat.geom >=3.8_2
+    - r-spatstat.model >=3.7_2
+    - r-spatstat.random >=3.5_0
+    - r-spatstat.sparse >=3.2_0
+    - r-spatstat.univar >=3.2_0
+    - r-spatstat.utils >=3.2_4
   run:
     - r-base
     - r-matrix
     - r-spatstat.data >=3.1_9
-    - r-spatstat.explore >=3.8
-    - r-spatstat.geom >=3.7_3
-    - r-spatstat.model >=3.7
-    - r-spatstat.random >=3.4_5
-    - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_7
-    - r-spatstat.utils >=3.2_2
+    - r-spatstat.explore >=3.8_2
+    - r-spatstat.geom >=3.8_2
+    - r-spatstat.model >=3.7_2
+    - r-spatstat.random >=3.5_0
+    - r-spatstat.sparse >=3.2_0
+    - r-spatstat.univar >=3.2_0
+    - r-spatstat.utils >=3.2_4
 
 test:
   commands:
@@ -73,7 +74,30 @@ about:
   home: http://spatstat.org/
   dev_url: https://github.com/spatstat/spatstat.linnet
   license: GPL-2.0-or-later
-  summary: This is a subset of the 'spatstat' package, containing its functionality for spatial data on a linear network.
+  summary: Defines types of spatial data on a linear network and provides functionality for geometrical
+    operations, data analysis and modelling of data on a linear network, in the 'spatstat'
+    family of packages. Contains definitions and support for linear networks, including
+    creation of networks, geometrical measurements, topological connectivity, geometrical
+    operations such as inserting and deleting vertices, intersecting a network with
+    another object, and interactive editing of networks. Data types defined on a network
+    include point patterns, pixel images, functions, and tessellations. Exploratory
+    methods include kernel estimation of intensity on a network, K-functions and pair
+    correlation functions on a network, simulation envelopes, nearest neighbour distance
+    and empty space distance, relative risk estimation with cross-validated bandwidth
+    selection. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov,
+    Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and
+    tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA)
+    are also supported. Parametric models can be fitted to point pattern data using
+    the function lppm() similar to glm(). Only Poisson models are implemented so far.
+    Models may involve dependence on covariates and dependence on marks. Models are
+    fitted by maximum likelihood. Fitted point process models can be simulated, automatically.
+    Formal hypothesis tests of a fitted model are supported (likelihood ratio test,
+    analysis of deviance, Monte Carlo tests) along with basic tools for model selection
+    (stepwise(), AIC()) and variable selection (sdr). Tools for validating the fitted
+    model include simulation envelopes, residuals, residual plots and Q-Q plots, leverage
+    and influence diagnostics, partial residuals, and added variable plots. Random point
+    patterns on a network can be generated using a variety of models.
+  license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
